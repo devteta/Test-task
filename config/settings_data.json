@@ -1,6 +1,15 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/new_logo_oleassence_HD_copie_2_131de748-2c4e-4ca0-8adc-6c808485dfb5.png",
+    "logo": "shopify://shop_images/new_logo_oleassence_HD_copie_2_131de748-2c4e-4ca0-8adc-6c808485dfb5.png",
     "logo_width": 140,
     "type_header_font": "lato_n6",
     "heading_scale": 100,
@@ -95,13 +104,13 @@
     "badge_corner_radius": 4,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "social_facebook_link": "https:\/\/www.facebook.com\/oleassence",
-    "social_instagram_link": "https:\/\/instagram.com\/oleassenceenluberon\/",
-    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCYkLXE5uJ10MH-RZsLJ8h6Q\/",
+    "social_facebook_link": "https://www.facebook.com/oleassence",
+    "social_instagram_link": "https://instagram.com/oleassenceenluberon/",
+    "social_youtube_link": "https://www.youtube.com/channel/UCYkLXE5uJ10MH-RZsLJ8h6Q/",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
-    "social_pinterest_link": "https:\/\/www.pinterest.fr\/oleassence\/",
+    "social_pinterest_link": "https://www.pinterest.fr/oleassence/",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
@@ -117,7 +126,7 @@
       "anti-age-complement-alimentaire-1"
     ],
     "cart_carousel_information__icon_1": "camion",
-    "cart_carousel_information__heading_1": "Livraison gratuite à partir de <strong>75€<\/strong>",
+    "cart_carousel_information__heading_1": "Livraison gratuite à partir de <strong>75€</strong>",
     "cart_carousel_information__icon_2": "jambes",
     "cart_carousel_information__heading_2": "4,000+ personnes nous ont fait confiance",
     "cart_carousel_information__icon_3": "visage",
@@ -143,13 +152,6 @@
       }
     },
     "content_for_index": [],
-    "blocks": {
-      "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      }
-    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -239,6 +241,22 @@
           "background_lighten": "#ffffff",
           "background_gradient": "",
           "text": "#443d36",
+          "button": "#443d36",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#443d36",
+          "background_inputs": "#ffffff",
+          "shadow": "#443d36",
+          "border": "#ddd6d0"
+        }
+      },
+      "scheme-971255f8-c7f2-4c5f-a975-73e59515bb72": {
+        "settings": {
+          "background": "#fdf8ee",
+          "background_contrast": "#d74c2c",
+          "background_darken": "#f6e3ca",
+          "background_lighten": "#ffffff",
+          "background_gradient": "",
+          "text": "#4e3631",
           "button": "#443d36",
           "button_label": "#ffffff",
           "secondary_button_label": "#443d36",

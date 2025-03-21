@@ -1528,6 +1528,17 @@
       },
       {
         "type": "header",
+        "content": "t:settings_schema.cart.settings.progress_bar.header"
+      },
+      {
+        "type": "color_scheme",
+        "id": "progress_bar_color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+
+      {
+        "type": "header",
         "content": "Upsell produits"
       },
       {

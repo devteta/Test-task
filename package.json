@@ -4,7 +4,7 @@
   "description": "",
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.6.0",
-    "gulp": "^5.0.0",
+    "gulp": "^4.0.2",
     "gulp-append-prepend": "^1.0.9",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-changed": "^5.0.2",

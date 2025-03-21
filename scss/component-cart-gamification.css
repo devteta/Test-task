@@ -1,0 +1,32 @@
+.cart-gamification {
+  margin: 20px 0;
+  padding: 16px;
+  border-radius: 8px;
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-badge-foreground));
+  font-family: var(--font-heading-family);
+}
+
+.hook-text, .step-completed {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.cart-gamification__progress-bar {
+  height: 10px;
+  background: rgb(var(--color-background-lighten));
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  display: block;
+  height: 10px;
+  background-color: rgb(var(--color-background-contrast));
+  transition: width 0.3s ease;
+}
+.progress-fill:empty {
+  display: block;
+}
+
+/*# sourceMappingURL=component-cart-gamification.css.map */

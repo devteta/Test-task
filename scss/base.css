@@ -1,0 +1,38 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 103 | / @include respond-to(md) {
+ * 104 | |   .page-width {
+ * 105 | |     padding: 0 64px;
+ * 106 | |   }
+ * 107 | | 
+ * 108 | |   .header.page-width,
+ * 109 | |   .utility-bar__grid.page-width {
+ * 110 | |     padding-right: 3.2rem;
+ * 111 | |     padding-left: 3.2rem;
+ * 112 | |   }
+ * 113 | | 
+ * 114 | |   .page-width--narrow {
+ * 115 | |     padding: 0 9rem;
+ * 116 | |   }
+ * 117 | | 
+ * 118 | |   .page-width-desktop {
+ * 119 | |     padding: 0;
+ * 120 | |   }
+ * 121 | | 
+ * 122 | |   .page-width-tablet {
+ * 123 | |     padding: 0 5rem;
+ * 124 | |   }
+ * 125 | \ }
+ *     '
+ *   base.scss 103:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 103 \2502  \250c  @include respond-to(md) {\a 104 \2502  \2502    .page-width {\a 105 \2502  \2502      padding: 0 64px;\a 106 \2502  \2502    }\a 107 \2502  \2502  \a 108 \2502  \2502    .header.page-width,\a 109 \2502  \2502    .utility-bar__grid.page-width {\a 110 \2502  \2502      padding-right: 3.2rem;\a 111 \2502  \2502      padding-left: 3.2rem;\a 112 \2502  \2502    }\a 113 \2502  \2502  \a 114 \2502  \2502    .page-width--narrow {\a 115 \2502  \2502      padding: 0 9rem;\a 116 \2502  \2502    }\a 117 \2502  \2502  \a 118 \2502  \2502    .page-width-desktop {\a 119 \2502  \2502      padding: 0;\a 120 \2502  \2502    }\a 121 \2502  \2502  \a 122 \2502  \2502    .page-width-tablet {\a 123 \2502  \2502      padding: 0 5rem;\a 124 \2502  \2502    }\a 125 \2502  \2514  }\a     \2575 \a   base.scss 103:1  root stylesheet";
+}

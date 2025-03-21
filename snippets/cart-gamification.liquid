@@ -1,0 +1,71 @@
+{% comment %} MOCK DATA {% endcomment %}
+
+{%- assign current_total = 22 -%}
+
+{%- assign step1_goal = 20 -%}
+{%- assign step1_hook = "get free shipping!" -%}
+{%- assign step1_sentence = "You unlocked free shipping!" -%}
+{%- assign step1_active = true -%}
+
+{%- assign step2_goal = 50 -%}
+{%- assign step2_hook = "receive a free sample!" -%}
+{%- assign step2_sentence = "You got your free sample!" -%}
+{%- assign step2_active = true -%}
+
+{%- assign step3_goal = 100 -%}
+{%- assign step3_hook = "get a free tote bag!" -%}
+{%- assign step3_sentence = "Tote bag is yours!" -%}
+{%- assign step3_active = true -%}
+
+{%- assign next_goal = 0 -%}
+{%- assign next_hook = "" -%}
+{%- assign next_sentence = "" -%}
+{%- assign last_sentence = "" -%}
+{%- assign max_goal = 0 -%}
+
+{%- if step1_active and current_total < step1_goal -%}
+  {%- assign next_goal = step1_goal -%}
+  {%- assign next_hook = step1_hook -%}
+  {%- assign next_sentence = step1_sentence -%}
+{%- elsif step2_active and current_total < step2_goal -%}
+  {%- assign next_goal = step2_goal -%}
+  {%- assign next_hook = step2_hook -%}
+  {%- assign next_sentence = step2_sentence -%}
+  {%- assign last_sentence = step1_sentence -%}
+  {%- assign max_goal = step2_goal -%}
+{%- elsif step3_active and current_total < step3_goal -%}
+  {%- assign next_goal = step3_goal -%}
+  {%- assign next_hook = step3_hook -%}
+  {%- assign next_sentence = step3_sentence -%}
+  {%- assign last_sentence = step2_sentence -%}
+  {%- assign max_goal = step3_goal -%}
+{%- else -%}
+  {%- assign last_sentence = step3_sentence -%}
+  {%- assign max_goal = step3_goal -%}
+{%- endif -%}
+
+{%- if next_goal > 0 -%}
+  {%- assign remaining = next_goal | minus: current_total -%}
+  {%- assign progress = current_total | times: 100 | divided_by: next_goal -%}
+{%- else -%}
+  {%- assign progress = 100 -%}
+{%- endif -%}
+
+{% comment %} MOCK DATA END {% endcomment %}
+
+
+<div class="cart-gamification color-{{ settings.progress_bar_color_scheme }}">
+  {% if next_goal > 0 %}
+    <p class="cart-gamification__hook-text">
+      Add ${{ remaining }} to {{ next_hook }}
+    </p>
+  {% else %}
+    <p class="cart-gamification__step-completed">
+      {{ last_sentence }}
+    </p>
+  {% endif %}
+
+  <div class="cart-gamification__progress-bar">
+    <div class="progress-fill" style="width: {{ progress | default: 0 }}%;"></div>
+  </div>
+</div>

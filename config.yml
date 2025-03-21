@@ -1,2 +1,3 @@
-store: STORE_HANDLE
-dev_theme_id: DEV_THEME_ID
+store: https://admin.shopify.com/store/vadim-teta-dev-store
+dev_theme_id: preview_theme_id=136365375558
+

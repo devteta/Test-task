@@ -343,6 +343,9 @@
             "label": "Collection",
             "info": "Visible when cart drawer is empty."
           }
+        },
+        "progress_bar": {
+          "header": "Progress bar",
         }
       }
     },
