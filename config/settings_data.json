@@ -120,6 +120,7 @@
     "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
+    "progress_bar_color_scheme": "scheme-971255f8-c7f2-4c5f-a975-73e59515bb72",
     "cart_upsell_products": [
       "baume-chantilly-soin-des-mains-avec-huiles-essentielles",
       "apres-shampoing-a-laloe-vera",
